@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital,wght@1,900&display=swap');
+        body {
+            background-color: rgb(255, 255, 255);
+            background-image: url("tok.jpg");
+            background-repeat: no-repeat;
+            background-position: center left;
+            background-attachment: fixed;
+            margin-right: 250px;
+        }
+    </style>
+    <script>
+        localStorage.clickcount = 0;
+
+        function clickCounter() {
+
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount) {
+
+                    localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                } else {
+                    localStorage.clickcount = 1;
+                }
+                document.getElementById("result").innerHTML = "Your token number is" + " " + localStorage.clickcount;
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+
+        function clickCounter1() {
+
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount) {
+
+                    localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                } else {
+                    localStorage.clickcount = 1;
+                }
+                document.getElementById("result").innerHTML = "Your token number is" + " " + "D" + localStorage.clickcount;
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+    </script>
+
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+    <div>
+        <a class="c" href="homepaget.html">LOG OUT</a>
+    </div>
+
+
+    <h1 style="color:black;text-align:right;font-size:58px;font-family:'Fredoka One',cursive;">E-TOKEN SYSTEM <br>FOR BANK</h1>
+
+    <div class="gg" style="color: white;">D</div>
+
+    <br>
+    <div class="counter-container">
+        <div class="min-container">
+            <div class="digit-container">
+                <div class="digit-upper min2upper"></div>
+                <div class="digit-lower min2lower"></div>
+            </div>
+            <div class="digit-container">
+                <div class="digit-upper min1upper"></div>
+                <div class="digit-lower min1lower"></div>
+            </div>
+        </div>
+
+        <div class="min-text-container">
+            <span class="unit">  </span>
+        </div>
+        <br>
+        <div class="hcg1">WIthdrawl counter</div>
+        <br>
+        <br><br>
+        <div class="counter-container1">
+            <div class="min-container">
+                <div class="digit-container">
+                    <div class="digit-upper min2upper"></div>
+                    <div class="digit-lower min2lower"></div>
+                </div>
+                <div class="digit-container">
+                    <div class="digit-upper min1upper"></div>
+                    <div class="digit-lower min1lower"></div>
+                </div>
+            </div>
+            <br>
+            <div class="min-text-container">
+                <span class="unit">  </span>
+            </div>
+            <div class="hcg"> Deposite counter</div>
+
+        </div>
+    </div>
+
+    <div class="center">
+        <input type="checkbox" id="click">
+        <label for="click" class="click-me">book a token</label>
+        <div class="content">
+            <div class="header">
+                <h2>Select Your Purpose</h2>
+                <label for="click" class="fas fa-times"></label>
+
+
+            </div>
+
+            <p>
+                <button for="click" class="click-me" id="add" onclick="clickCounter()">Withdrawl</button>
+
+                <button for="click" class="click-me" id="add1" onclick="clickCounter1()">Deposite</button>
+            </p>
+
+
+
+
+        </div>
+
+    </div>
+    <div class="glow" id="result"></div>
+
+
+    <script type="text/javascript " src="page.js "></script>
+    <script type="text/javascript " src="login.js "></script>
+</body>
+
+</html>

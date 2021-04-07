@@ -1,0 +1,725 @@
+    @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@500&display=swap');
+    .center {
+        position: absolute;
+        top: 65%;
+        right: 10%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #click {
+        display: none;
+    }
+    
+    .click-me {
+        display: block;
+        width: 160px;
+        height: 50px;
+        font-family: 'Syne', sans-serif;
+        background: #0e0e0e88;
+        border: 3px solid #00ccff;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 22px;
+        line-height: 50px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    
+    .click-me:hover {
+        background: #ffffff;
+        color: black;
+    }
+    
+    .c {
+        width: 160px;
+        height: 50px;
+        font-family: 'Syne', sans-serif;
+        background: #0e0e0e88;
+        border: 3px solid #00ccff;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 22px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    
+    .c:hover {
+        background: #ffffff;
+        color: black;
+    }
+    
+    .content {
+        opacity: 1;
+        visibility: hidden;
+        width: 400px;
+        height: 250px;
+        background: white;
+        border-radius: 3px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
+    }
+    
+    #click:checked~.content {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .gg {
+        height: 1%;
+        font-size: 190px;
+        padding-left: 8%;
+        font-family: 'Syne', sans-serif;
+        margin-top: 35px;
+    }
+    
+    .gg1 {
+        height: 1%;
+        font-size: 190px;
+        padding-left: 0%;
+        font-family: 'Syne', sans-serif;
+        margin-bottom: 0px;
+    }
+    
+    .hcg {
+        height: 100px;
+        font-size: 30px;
+        padding-top: 115px;
+        padding-right: 300px;
+        font-family: 'Syne', sans-serif;
+        align-content: left;
+    }
+    
+    .hcg1 {
+        height: 100px;
+        font-size: 30px;
+        padding-top: 105px;
+        padding-right: 300px;
+        font-family: 'Syne', sans-serif;
+        align-content: left;
+    }
+    
+    .header {
+        height: 118px;
+        background: #0414fd;
+        overflow: hidden;
+        border-radius: 3px 3px 0 0;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
+    }
+    
+    .header h2 {
+        color: white;
+        padding-left: 32px;
+        font-weight: normal;
+    }
+    
+    .fa-times {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: #e8f7fc;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .fa-check {
+        font-size: 50px;
+        color: #008afc;
+        font-weight: bold;
+        height: 80px;
+        width: 80px;
+        border: 2px solid #0066ff;
+        text-align: center;
+        padding-top: 13px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        margin: 30px 0 0 160px;
+    }
+    
+    p {
+        padding-top: 10px;
+        font-size: 19px;
+        font-family: 'Potta One', cursive;
+        color: #1a1a1a;
+        text-align: center;
+    }
+    
+    .glow {
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+        padding-left: 300px;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #423f41, 0 0 60px #240e19, 0 0 70px #e60073;
+        }
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #332d30, 0 0 40px #1b1819, 0 0 50px #472e3b, 0 0 60px #383436, 0 0 70px #4b333f, 0 0 80px #ff4da6;
+        }
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    
+    html {
+        height: 100%;
+    }
+    
+    .counter-container {
+        position: absolute;
+        height: 15%;
+        width: 55%;
+        top: 23%;
+        margin-left: 45%;
+        padding: 10px;
+        transform: translate(-50%, -50%);
+    }
+    
+    .counter-container1 {
+        position: absolute;
+        height: 75%;
+        width: 95%;
+        top: 185%;
+        margin-left: 48%;
+        padding: 10px;
+        padding-top: 50px;
+        transform: translate(-50%, -50%);
+    }
+    
+    .min-container,
+    .sec-container {
+        width: 35%;
+        float: left;
+        height: 100%;
+    }
+    
+    .min-text-container,
+    .sec-text-container {
+        width: 15%;
+        float: left;
+        height: 100%;
+        line-height: 50%;
+        font-size: 500%;
+        line-height: 264px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    .digit-container {
+        float: left;
+        width: 40%;
+        margin-left: 8%;
+        height: 100%;
+    }
+    
+    .digit-upper {
+        height: 49%;
+        width: 98%;
+        animation-iteration-count: infinite;
+    }
+    
+    .digit-lower {
+        height: 49%;
+        width: 98%;
+        animation-iteration-count: infinite;
+    }
+    
+    .header {
+        font-size: 32px;
+        padding-top: 12px;
+        text-align: center;
+    }
+    
+    .min1upper,
+    .min1lower {
+        animation-duration: 3000s
+    }
+    
+    .min1upper {
+        animation-name: animate-upper-min1
+    }
+    
+    .min1lower {
+        animation-name: animate-lower-min1
+    }
+    
+    .min2upper,
+    .min2lower {
+        animation-duration: 30000s
+    }
+    
+    .min2upper {
+        animation-name: animate-upper-min2
+    }
+    
+    .min2lower {
+        animation-name: animate-lower-min2
+    }
+    
+    @keyframes animate-upper-min1 {
+        0% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent
+        }
+        9.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent
+        }
+        10% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        19.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        20% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        29.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        30% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid white
+        }
+        39.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid white
+        }
+        40% {
+            border-left: 12px solid white;
+            border-right: 12px solid transparent;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        49.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid transparent;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        50% {
+            border-left: 12px solid white;
+            border-right: 12px solid transparent;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        59.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid transparent;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        60% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        69.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        70% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        79.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        80% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        89.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        90% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+    }
+    
+    @keyframes animate-lower-min1 {
+        0% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        9.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        10% {
+            border-left: 12px solid white;
+            border-right: 12px solid transparent;
+            border-bottom: 12px solid white
+        }
+        19.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid transparent;
+            border-bottom: 12px solid white
+        }
+        20% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        29.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        30% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        39.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        40% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        49.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        50% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        59.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        60% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        69.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        70% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        79.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        80% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        89.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        90% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+    }
+    /*******************************************************************************************************/
+    
+    @keyframes animate-upper-min2 {
+        0% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        9.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        10% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent
+        }
+        19.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent
+        }
+        20% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        29.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        30% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        39.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        40% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid white
+        }
+        49.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid white
+        }
+        50% {
+            border-left: 12px solid white;
+            border-right: 12px solid transparent;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        59.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid transparent;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        60% {
+            border-left: 12px solid white;
+            border-right: 12px solid transparent;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        69.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid transparent;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        70% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        79.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        80% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        89.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        90% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        99.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        100% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-top: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+    }
+    
+    @keyframes animate-lower-min2 {
+        0% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        9.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        10% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        19.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        20% {
+            border-left: 12px solid white;
+            border-right: 12px solid transparent;
+            border-bottom: 12px solid white
+        }
+        29.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid transparent;
+            border-bottom: 12px solid white
+        }
+        30% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        39.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        40% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        49.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        50% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        59.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        60% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        69.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        70% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        79.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid transparent
+        }
+        80% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        89.9% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        90% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        99.9% {
+            border-left: 12px solid transparent;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+        100% {
+            border-left: 12px solid white;
+            border-right: 12px solid white;
+            border-bottom: 12px solid white
+        }
+    }

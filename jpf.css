@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+* {
+    font-family: 'Akaya Telivigala', cursive;
+    letter-spacing: 2px;
+    background-color: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: normal;
+    align-items: top;
+    text-align: right;
+    margin-right: 210px;
+    min-height: 15vh;
+}
+
+.cintainer {
+    width: 0px;
+    height: 100px;
+}
+
+.btn-1 {
+    width: 170px;
+    height: 70px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px 25px;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    border: 3px solid rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
+}
+
+.btn-1:hover {
+    color: rgb(134, 10, 10);
+    cursor: pointer;
+}
+
+.btn-1:before {
+    transition: 0.5s all ease;
+    border-radius: 5px 25px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #ffffff;
+}
+
+.btn-1:hover:before {
+    transition: 0.5s all ease;
+    border-radius: 5px 25px;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.btn-2 {
+    width: 180px;
+    height: 100px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px 25px;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    border: 3px solid rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
+}
+
+.btn-2:hover {
+    color: rgb(73, 6, 6);
+    cursor: pointer;
+}
+
+.btn-2:before {
+    transition: 0.5s all ease;
+    border-radius: 5px 25px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #ffffff;
+}
+
+.btn-2:hover:before {
+    transition: 0.5s all ease;
+    border-radius: 5px 25px;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.btn-3 {
+    width: 170px;
+    height: 70px;
+    border: none;
+    color: rgb(0, 88, 252);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px 25px;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    border: 3px solid rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
+}
+
+.btn-3:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.btn-3:before {
+    transition: 0.5s all ease;
+    border-radius: 5px 25px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #000000;
+}
+
+.btn-3:hover:before {
+    transition: 0.5s all ease;
+    border-radius: 5px 25px;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: .5;
+    background-color: #fdfbfb;
+}
+
+table {
+    margin-right: 100px;
+    margin-left: 300px;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(32, 32, 32, .3);
+    background: #fafafa;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+th,
+td {
+    padding: 1px 4px;
+}
+
+th {
+    background: #0f0f0f;
+    color: #d40505;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+tr:nth-child(odd) {
+    background-color: #e9e1e1;
+}

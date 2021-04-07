@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+* {
+    font-family: 'Akaya Telivigala', cursive;
+    letter-spacing: 2px;
+    background-color: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: normal;
+    align-items: top;
+    text-align: right;
+    margin-right: 210px;
+    min-height: 15vh;
+}
+
+.btn-3 {
+    width: 300px;
+    height: 90px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(2, 2, 2, 0.144);
+    border-radius: 5px 25px;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    border: 3px solid rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
+}
+
+.btn-3:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.btn-3:before {
+    transition: 0.6s all ease;
+    border-radius: 5px 25px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #000000;
+}
+
+.btn-3:hover:before {
+    transition: 0.6s all ease;
+    border-radius: 6px 25px;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.btn-1 {
+    width: 300px;
+    height: 90px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(2, 2, 2, 0.144);
+    border-radius: 5px 25px;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    border: 3px solid rgba(0, 0, 0, 0);
+    position: relative;
+    z-index: 1;
+}
+
+.btn-1:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.btn-1:before {
+    transition: 0.6s all ease;
+    position: relative;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #ffffff00;
+}
+
+.btn-1:hover:before {
+    transition: 0.6s all ease;
+    border-radius: 6px 25px;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solidblack;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
