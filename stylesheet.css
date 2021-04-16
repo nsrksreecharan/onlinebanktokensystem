@@ -248,7 +248,7 @@
     
     .min1upper,
     .min1lower {
-        animation-duration: 30s
+        animation-duration: 3s
     }
     
     .min1upper {
@@ -261,7 +261,7 @@
     
     .min2upper,
     .min2lower {
-        animation-duration: 300s
+        animation-duration: 30s
     }
     
     .min2upper {
